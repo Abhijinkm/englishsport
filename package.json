@@ -1,0 +1,18 @@
+{
+  "name": "english-learning-institute",
+  "version": "1.0.0",
+  "description": "Website for ENGLISH LEARNING INSTITUTE",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx -y serve . -l 3000",
+    "start": "npx -y serve . -l 3000"
+  },
+  "keywords": [
+    "english",
+    "learning",
+    "institute",
+    "spoken-english"
+  ],
+  "author": "ENGLISH LEARNING INSTITUTE",
+  "license": "ISC"
+}
