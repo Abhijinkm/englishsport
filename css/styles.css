@@ -490,13 +490,28 @@ ul {
 }
 
 .hero-headline {
-  font-family: var(--font-heading);
-  font-size: clamp(2.3rem, 5vw, 3.5rem);
-  font-weight: 900;
-  line-height: 1.15;
-  letter-spacing: -0.03em;
+  margin-bottom: 1.5rem;
+}
+
+.hero-headline-malayalam {
+  display: block;
+  font-family: var(--font-malayalam);
+  font-size: clamp(1.95rem, 4.2vw, 3.1rem);
+  font-weight: 800;
+  line-height: 1.25;
   color: var(--color-primary-dark);
-  margin-bottom: 1.35rem;
+  margin-bottom: 0.85rem;
+  letter-spacing: -0.01em;
+}
+
+.hero-headline-caps {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: clamp(1.35rem, 3.2vw, 2.2rem);
+  font-weight: 900;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 }
 
 .hero-badge-tag.malayalam-hero-badge {
@@ -1693,8 +1708,14 @@ ul {
     gap: 2.5rem;
   }
 
-  .hero-headline {
-    font-size: clamp(2rem, 6vw, 2.6rem);
+  .hero-headline-malayalam {
+    font-size: 1.85rem;
+    line-height: 1.3;
+  }
+
+  .hero-headline-caps {
+    font-size: 1.25rem;
+    line-height: 1.25;
   }
 
   .fee-guarantee-card {
@@ -1773,9 +1794,14 @@ ul {
     font-size: 0.65rem;
   }
 
-  .hero-headline {
-    font-size: 1.9rem;
-    line-height: 1.2;
+  .hero-headline-malayalam {
+    font-size: 1.5rem;
+    line-height: 1.3;
+  }
+
+  .hero-headline-caps {
+    font-size: 1.05rem;
+    line-height: 1.25;
   }
 
   .hero-badge-malayalam {
