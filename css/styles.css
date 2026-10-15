@@ -272,8 +272,7 @@ ul {
   height: 100%;
   object-fit: contain;
   display: block;
-  border-radius: var(--radius-md);
-  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
+  filter: drop-shadow(0 2px 5px rgba(158, 54, 64, 0.2));
 }
 
 .brand-logo:hover .brand-icon-wrap {
@@ -295,7 +294,7 @@ ul {
 }
 
 .brand-title .spot-dot {
-  color: var(--color-accent);
+  color: #9E3640;
 }
 
 .brand-subtitle {
