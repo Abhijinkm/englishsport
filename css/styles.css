@@ -490,27 +490,38 @@ ul {
 }
 
 .hero-headline {
-  margin-bottom: 1.25rem;
-}
-
-.hero-malayalam-title {
-  display: block;
-  font-family: var(--font-malayalam);
-  font-size: clamp(2.2rem, 5vw, 3.4rem);
-  font-weight: 800;
-  line-height: 1.25;
-  color: var(--color-primary-dark);
-  margin-bottom: 0.65rem;
-  letter-spacing: -0.01em;
-}
-
-.hero-english-caption {
-  display: block;
   font-family: var(--font-heading);
-  font-size: clamp(1.35rem, 3.2vw, 2.15rem);
-  font-weight: 800;
-  line-height: 1.3;
-  letter-spacing: -0.02em;
+  font-size: clamp(2.3rem, 5vw, 3.5rem);
+  font-weight: 900;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  color: var(--color-primary-dark);
+  margin-bottom: 1.35rem;
+}
+
+.hero-badge-tag.malayalam-hero-badge {
+  background: #FFFFFF;
+  border: 1.5px solid rgba(37, 99, 235, 0.22);
+  padding: 0.45rem 1.15rem;
+  gap: 0.65rem;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.08);
+  flex-wrap: wrap;
+}
+
+.hero-badge-malayalam {
+  font-size: 0.96rem;
+  font-weight: 700;
+  color: var(--color-primary-dark);
+}
+
+.badge-divider {
+  color: #CBD5E1;
+}
+
+.badge-rating {
+  font-size: 0.82rem;
+  color: var(--color-text-muted);
+  font-weight: 600;
 }
 
 .hero-headline .text-gradient {
@@ -1683,17 +1694,7 @@ ul {
   }
 
   .hero-headline {
-    font-size: 2.2rem;
-  }
-
-  .hero-malayalam-title {
-    font-size: 1.95rem;
-    line-height: 1.3;
-  }
-
-  .hero-english-caption {
-    font-size: 1.28rem;
-    line-height: 1.35;
+    font-size: clamp(2rem, 6vw, 2.6rem);
   }
 
   .fee-guarantee-card {
@@ -1772,14 +1773,13 @@ ul {
     font-size: 0.65rem;
   }
 
-  .hero-malayalam-title {
-    font-size: 1.65rem;
-    line-height: 1.3;
+  .hero-headline {
+    font-size: 1.9rem;
+    line-height: 1.2;
   }
 
-  .hero-english-caption {
-    font-size: 1.12rem;
-    line-height: 1.35;
+  .hero-badge-malayalam {
+    font-size: 0.88rem;
   }
 
   .fee-guarantee-card {
