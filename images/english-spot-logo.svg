@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="esGradPrimary" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1D4ED8" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+    <linearGradient id="esGradAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F59E0B" />
+      <stop offset="100%" stop-color="#EF4444" />
+    </linearGradient>
+    <linearGradient id="esGradBubble" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="100%" stop-color="#2563EB" />
+    </linearGradient>
+    <filter id="esShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0f172a" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Outer Rounded Shield / Badge -->
+  <rect x="12" y="12" width="176" height="176" rx="42" fill="url(#esGradPrimary)" filter="url(#esShadow)" />
+
+  <!-- Subtle Inner Ring -->
+  <rect x="16" y="16" width="168" height="168" rx="38" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="2" />
+
+  <!-- Speech Bubble Graphic -->
+  <path d="M50 64 C50 48, 64 38, 100 38 C136 38, 150 48, 150 64 C150 80, 136 90, 106 90 C96 90, 78 95, 62 104 C66 94, 66 90, 60 88 C53 82, 50 74, 50 64 Z" fill="url(#esGradBubble)" opacity="0.95" />
+
+  <!-- The "Spot" focal circle (vibrant orange accent spot) -->
+  <circle cx="142" cy="54" r="14" fill="url(#esGradAccent)" stroke="#FFFFFF" stroke-width="3" />
+  <circle cx="142" cy="54" r="5" fill="#FFFFFF" opacity="0.9" />
+
+  <!-- Stylized "ES" Monogram -->
+  <g fill="#FFFFFF" font-family="'Outfit', 'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="44" letter-spacing="-1">
+    <text x="56" y="152" fill="#FFFFFF">E</text>
+    <text x="84" y="152" fill="#38BDF8">S</text>
+  </g>
+
+  <!-- Dot on the 'S' or Spot Accent -->
+  <circle cx="124" cy="144" r="6" fill="#F59E0B" />
+
+  <!-- Mini soundwaves / conversation arcs inside speech bubble -->
+  <path d="M78 62 Q92 56 106 62" fill="none" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round" />
+  <path d="M84 72 Q94 67 104 72" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" opacity="0.85" />
+</svg>

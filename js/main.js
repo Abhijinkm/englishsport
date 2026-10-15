@@ -100,10 +100,10 @@ function initEnquiryForm() {
     const mobileVal = mobileInput.value.trim() || "[Your Mobile Number]";
     
     const formattedMessage = 
-`New Enquiry – ENGLISH LEARNING INSTITUTE
+`New Enquiry – English Spot
 Name: ${nameVal}
 Mobile: ${mobileVal}
-I am interested in joining the English learning course.`;
+I am interested in joining the English Spot spoken English course.`;
 
     if (previewText) {
       previewText.textContent = formattedMessage;
@@ -185,8 +185,7 @@ I am interested in joining the English learning course.`;
     const customerMobile = mobileInput.value.trim();
 
     // Construct the requested pre-filled message format:
-    // "New Enquiry – ENGLISH LEARNING INSTITUTE, Name:, Mobile:, ‘I am interested in joining the English learning course.’"
-    const message = `New Enquiry – ENGLISH LEARNING INSTITUTE\nName: ${customerName}\nMobile: ${customerMobile}\nI am interested in joining the English learning course.`;
+    const message = `New Enquiry – English Spot\nName: ${customerName}\nMobile: ${customerMobile}\nI am interested in joining the English Spot spoken English course.`;
 
     const encodedMessage = encodeURIComponent(message);
     const whatsappUrl = `https://wa.me/${INSTITUTE_WHATSAPP_NUMBER}?text=${encodedMessage}`;
