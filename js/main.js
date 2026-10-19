@@ -4,7 +4,7 @@
  */
 
 // Configuration: Change this to the institute's official WhatsApp number
-const INSTITUTE_WHATSAPP_NUMBER = "919876543210"; // Default international format without '+'
+const INSTITUTE_WHATSAPP_NUMBER = "919995422610"; // Default international format without '+'
 
 document.addEventListener("DOMContentLoaded", () => {
   initNavbar();
