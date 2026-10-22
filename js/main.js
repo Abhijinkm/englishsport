@@ -4,7 +4,7 @@
  */
 
 // Configuration: Change this to the institute's official WhatsApp number
-const INSTITUTE_WHATSAPP_NUMBER = "919995422610"; // Default international format without '+'
+const INSTITUTE_WHATSAPP_NUMBER = "917902402017"; // Default international format without '+'
 
 document.addEventListener("DOMContentLoaded", () => {
   initNavbar();
@@ -263,7 +263,7 @@ function initFaqAccordion() {
  */
 function initScrollAnimations() {
   const animatedElements = document.querySelectorAll(
-    ".course-card, .feature-box, .step-item, .testimonial-card"
+    ".course-card, .feature-box, .step-item, .testimonial-card, .branch-card, .online-feature-card, .slot-item"
   );
 
   if ("IntersectionObserver" in window) {

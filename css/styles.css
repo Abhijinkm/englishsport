@@ -310,15 +310,16 @@ ul {
 .nav-menu {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 1.15rem;
 }
 
 .nav-link {
   font-weight: 600;
-  font-size: 0.95rem;
+  font-size: 0.88rem;
   color: var(--color-text-muted);
   position: relative;
   padding: 0.5rem 0;
+  white-space: nowrap;
 }
 
 .nav-link::after {
@@ -1389,6 +1390,428 @@ ul {
 }
 
 /* ==========================================================================
+   Branches Section
+   ========================================================================== */
+.branches-section {
+  padding: 5.5rem 0;
+  background-color: var(--color-surface);
+  position: relative;
+}
+
+.branches-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 3.5rem;
+}
+
+.branch-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 1.85rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-normal);
+  position: relative;
+}
+
+.branch-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-xl);
+  border-color: #BFDBFE;
+}
+
+.branch-card-featured {
+  background: linear-gradient(180deg, #FFFFFF 0%, #F0F9FF 100%);
+  border-color: #93C5FD;
+  box-shadow: 0 4px 20px rgba(37, 99, 235, 0.08);
+}
+
+.branch-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.branch-icon-pin {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-md);
+  background: #EFF6FF;
+  color: var(--color-primary-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.branch-icon-pin.live-icon {
+  background: #ECFDF5;
+  color: #10B981;
+}
+
+.branch-tag {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 0.2rem 0.65rem;
+  border-radius: var(--radius-full);
+  background: #F1F5F9;
+  color: var(--color-text-muted);
+  margin-bottom: 0.25rem;
+}
+
+.branch-tag.popular {
+  background: #FEF3C7;
+  color: #B45309;
+}
+
+.branch-tag.live-badge {
+  background: #DCFCE7;
+  color: #15803D;
+}
+
+.branch-name {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-primary-dark);
+  margin: 0;
+}
+
+.branch-address {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  margin-bottom: 1.25rem;
+  line-height: 1.5;
+  min-height: 2.7rem;
+}
+
+.branch-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.branch-features li {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.88rem;
+  color: var(--color-text-muted);
+}
+
+.branch-features li svg {
+  color: #10B981;
+  flex-shrink: 0;
+}
+
+.branch-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1.2rem;
+  border-top: 1px solid var(--color-border);
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.branch-hours {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--color-text-light);
+}
+
+.branch-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--color-primary-light);
+  padding: 0.45rem 0.95rem;
+  border-radius: var(--radius-full);
+  background: #EFF6FF;
+  text-decoration: none;
+  transition: all var(--transition-fast);
+}
+
+.branch-cta-btn:hover {
+  background: var(--color-primary-light);
+  color: #FFFFFF;
+}
+
+.branch-cta-btn.featured-btn {
+  background: #10B981;
+  color: #FFFFFF;
+}
+
+.branch-cta-btn.featured-btn:hover {
+  background: #059669;
+}
+
+.branch-support-banner {
+  margin-top: 3.5rem;
+  background: linear-gradient(135deg, #0F172A 0%, #1E3A8A 100%);
+  border-radius: var(--radius-xl);
+  padding: 2.25rem 2.75rem;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  box-shadow: var(--shadow-lg);
+}
+
+.branch-support-banner .banner-content {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.branch-support-banner .banner-icon {
+  width: 54px;
+  height: 54px;
+  border-radius: var(--radius-lg);
+  background: rgba(255, 255, 255, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #38BDF8;
+}
+
+.branch-support-banner h4 {
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin-bottom: 0.35rem;
+}
+
+.branch-support-banner p {
+  color: #CBD5E1;
+  font-size: 0.92rem;
+  margin: 0;
+  max-width: 580px;
+}
+
+.branch-support-banner .banner-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-shrink: 0;
+}
+
+/* ==========================================================================
+   Online Classes Section
+   ========================================================================== */
+.online-section {
+  padding: 5.5rem 0;
+  background: linear-gradient(180deg, #F8FAFC 0%, #EFF6FF 100%);
+  position: relative;
+}
+
+.online-features-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-top: 3.5rem;
+}
+
+.online-feature-card {
+  background: #FFFFFF;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 2rem 1.6rem;
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-normal);
+  display: flex;
+  flex-direction: column;
+}
+
+.online-feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-xl);
+  border-color: #93C5FD;
+}
+
+.online-icon-wrap {
+  width: 50px;
+  height: 50px;
+  border-radius: var(--radius-md);
+  background: #EFF6FF;
+  color: var(--color-primary-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.25rem;
+  flex-shrink: 0;
+}
+
+.online-feature-card h4 {
+  font-family: var(--font-heading);
+  font-size: 1.12rem;
+  font-weight: 700;
+  color: var(--color-primary-dark);
+  margin-bottom: 0.6rem;
+  line-height: 1.35;
+}
+
+.online-feature-card p {
+  font-size: 0.88rem;
+  color: var(--color-text-muted);
+  line-height: 1.55;
+  margin: 0;
+}
+
+.online-batches-card {
+  margin-top: 3.5rem;
+  background: #FFFFFF;
+  border: 1px solid #BFDBFE;
+  border-radius: var(--radius-xl);
+  padding: 2.5rem;
+  box-shadow: var(--shadow-lg);
+}
+
+.online-batches-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.online-batches-header h3 {
+  font-family: var(--font-heading);
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: var(--color-primary-dark);
+  margin: 0;
+}
+
+.online-badge-pill {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--radius-full);
+  background: #DBEAFE;
+  color: #1D4ED8;
+  margin-bottom: 0.4rem;
+}
+
+.online-live-indicator {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #059669;
+  background: #ECFDF5;
+  padding: 0.45rem 1rem;
+  border-radius: var(--radius-full);
+  border: 1px solid #A7F3D0;
+}
+
+.online-slots-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+  margin-bottom: 2.25rem;
+}
+
+.slot-item {
+  background: #F8FAFC;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 1.35rem 1.2rem;
+  transition: all var(--transition-normal);
+}
+
+.slot-item:hover {
+  border-color: #3B82F6;
+  background: #FFFFFF;
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.slot-item.slot-highlight {
+  background: #FEF3C7;
+  border-color: #FCD34D;
+}
+
+.slot-time {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--color-primary-light);
+  margin-bottom: 0.35rem;
+}
+
+.slot-item.slot-highlight .slot-time {
+  color: #B45309;
+}
+
+.slot-hours {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--color-primary-dark);
+  margin-bottom: 0.5rem;
+}
+
+.slot-item p {
+  font-size: 0.82rem;
+  color: var(--color-text-muted);
+  margin: 0;
+  line-height: 1.45;
+}
+
+.online-cta-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 2rem;
+  border-top: 1px solid var(--color-border);
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.online-cta-text h4 {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-primary-dark);
+  margin-bottom: 0.25rem;
+}
+
+.online-cta-text p {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  margin: 0;
+}
+
+.online-cta-btns {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* ==========================================================================
    FAQ Section
    ========================================================================== */
 .faq-section {
@@ -1640,6 +2063,15 @@ ul {
   .courses-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+  .branches-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .online-features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .online-slots-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
   .features-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1742,6 +2174,56 @@ ul {
 
   .testimonials-grid {
     grid-template-columns: 1fr;
+  }
+
+  .branches-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .online-features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .online-slots-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .online-batches-card {
+    padding: 1.75rem 1.25rem;
+  }
+
+  .online-cta-banner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .online-cta-btns {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .online-cta-btns .btn {
+    width: 100%;
+  }
+
+  .branch-support-banner {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.75rem 1.5rem;
+  }
+
+  .branch-support-banner .banner-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .branch-support-banner .banner-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .branch-support-banner .banner-actions .btn {
+    width: 100%;
   }
 
   .footer-grid {
