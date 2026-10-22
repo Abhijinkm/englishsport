@@ -1795,34 +1795,35 @@ ul {
 }
 
 .slot-item:hover {
-  border-color: #3B82F6;
+  border-color: #9E3640;
   background: #FFFFFF;
   box-shadow: var(--shadow-md);
   transform: translateY(-2px);
 }
 
 .slot-item.slot-highlight {
-  background: #FEF3C7;
-  border-color: #FCD34D;
+  background: #FFF5F5;
+  border-color: #9E3640;
 }
 
 .slot-time {
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   font-weight: 700;
   text-transform: uppercase;
   color: var(--color-primary-light);
   margin-bottom: 0.35rem;
+  letter-spacing: 0.3px;
 }
 
 .slot-item.slot-highlight .slot-time {
-  color: #B45309;
+  color: #9E3640;
 }
 
 .slot-hours {
   font-family: var(--font-heading);
-  font-size: 1.15rem;
-  font-weight: 700;
-  color: var(--color-primary-dark);
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #9E3640;
   margin-bottom: 0.5rem;
 }
 
@@ -1831,6 +1832,28 @@ ul {
   color: var(--color-text-muted);
   margin: 0;
   line-height: 1.45;
+}
+
+.package-features {
+  list-style: none;
+  padding: 0;
+  margin: 0.75rem 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.package-features li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.88rem;
+  color: var(--color-primary-dark);
+  font-weight: 500;
+}
+
+.package-features li svg {
+  flex-shrink: 0;
 }
 
 .online-cta-banner {
