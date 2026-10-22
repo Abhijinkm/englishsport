@@ -13,13 +13,13 @@ A modern, premium, professional, and fully responsive website for **ENGLISH LEAR
    - High-resolution English learning visual with floating badges (*100% Practical Speaking*, *Certified Mentors*)
    - Quick statistics counter (12,000+ Trained Graduates, 98% Fluency Rate, 100% Practical Drills)
 
-2. **Courses Section (6 Comprehensive Courses)**:
-   - **Spoken English** (Fluency, Accent Neutralization, Hesitation Elimination)
-   - **English Grammar** (Tenses, Sentence Construction, Error Correction)
-   - **Communication Skills** (Corporate Presentation, Public Speaking, Workplace Etiquette)
-   - **Interview Preparation** (HR Mock Interviews, STAR Method, GD Mastery)
-   - **Personality Development** (Body Language, Voice Modulation, Executive Presence)
-   - **English for Beginners** (Phonics, Basic Vocabulary, Daily Phrases, Bilingual Support)
+2. **Courses Section (Start at Your Level - 6 Courses)**:
+   - **Spoken English** (Basic and Intermediate - Practical speaking, interactive activities, GD & public speaking)
+   - **Advanced Level** (Critical thinking, debates, advanced sentence formation, thinking in English)
+   - **Pre Basic** (Reading & writing practice, word formation, everyday vocabulary, simple sentences)
+   - **Kids Package** (Listening & speaking, daily conversation, activity-oriented learning, language games)
+   - **Intermediate and Advanced** (Natural expressions, pronunciation, fluent communication, public speaking)
+   - **Business English** (Professional situations, intonation & speaking rhythm, advanced vocabulary)
 
 3. **WhatsApp Enquiry Section (Strictly Two Inputs)**:
    - Input 1: **Name**
