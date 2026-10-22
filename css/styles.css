@@ -1790,8 +1790,10 @@ ul {
   background: #F8FAFC;
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
-  padding: 1.35rem 1.2rem;
+  padding: 1.4rem 1.2rem;
   transition: all var(--transition-normal);
+  display: flex;
+  flex-direction: column;
 }
 
 .slot-item:hover {
@@ -1802,8 +1804,9 @@ ul {
 }
 
 .slot-item.slot-highlight {
-  background: #FFF5F5;
+  background: #FFF9F9;
   border-color: #9E3640;
+  box-shadow: 0 4px 16px rgba(158, 54, 64, 0.1);
 }
 
 .slot-time {
@@ -1812,7 +1815,7 @@ ul {
   text-transform: uppercase;
   color: var(--color-primary-light);
   margin-bottom: 0.35rem;
-  letter-spacing: 0.3px;
+  letter-spacing: 0.5px;
 }
 
 .slot-item.slot-highlight .slot-time {
@@ -1821,7 +1824,7 @@ ul {
 
 .slot-hours {
   font-family: var(--font-heading);
-  font-size: 1.25rem;
+  font-size: 1.35rem;
   font-weight: 800;
   color: #9E3640;
   margin-bottom: 0.5rem;
@@ -1837,10 +1840,11 @@ ul {
 .package-features {
   list-style: none;
   padding: 0;
-  margin: 0.75rem 0 0;
+  margin: 0.75rem 0 1.25rem;
   display: flex;
   flex-direction: column;
   gap: 0.45rem;
+  flex-grow: 1;
 }
 
 .package-features li {
@@ -1850,10 +1854,43 @@ ul {
   font-size: 0.88rem;
   color: var(--color-primary-dark);
   font-weight: 500;
+  line-height: 1.35;
 }
 
 .package-features li svg {
   flex-shrink: 0;
+}
+
+.package-cta-btn {
+  margin-top: auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #9E3640;
+  padding: 0.55rem 0.95rem;
+  border-radius: var(--radius-full);
+  background: #FFF5F5;
+  border: 1px solid rgba(158, 54, 64, 0.25);
+  text-decoration: none;
+  transition: all var(--transition-fast);
+}
+
+.package-cta-btn:hover {
+  background: #9E3640;
+  color: #FFFFFF;
+  border-color: #9E3640;
+}
+
+.slot-item.slot-highlight .package-cta-btn {
+  background: #9E3640;
+  color: #FFFFFF;
+}
+
+.slot-item.slot-highlight .package-cta-btn:hover {
+  background: #7D2630;
 }
 
 .online-cta-banner {
