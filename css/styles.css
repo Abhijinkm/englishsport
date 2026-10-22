@@ -1060,6 +1060,59 @@ ul {
   line-height: 1.6;
 }
 
+/* Our Key Features Grid & Card Items */
+.key-features-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.85rem;
+  margin-top: 1.75rem;
+}
+
+@media (min-width: 640px) {
+  .key-features-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.9rem;
+  }
+}
+
+.key-feature-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.85rem;
+  padding: 0.9rem 1.1rem;
+  background: #F8FAFC;
+  border-radius: var(--radius-md);
+  border: 1px solid #E2E8F0;
+  transition: all var(--transition-fast);
+}
+
+.key-feature-card:hover {
+  background: #FFFFFF;
+  border-color: #9E3640;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(158, 54, 64, 0.08);
+}
+
+.key-feature-icon {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: rgba(158, 54, 64, 0.1);
+  color: #9E3640;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.key-feature-text {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--color-primary-dark);
+  line-height: 1.45;
+}
+
 /* ==========================================================================
    Enquiry Section (Strictly: Name, Mobile Number, WhatsApp CTA)
    ========================================================================== */

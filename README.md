@@ -34,8 +34,8 @@ A modern, premium, professional, and fully responsive website for **ENGLISH LEAR
      I am interested in joining the English learning course.
      ```
 
-4. **Why Choose Us / Methodology**:
-   - 4-step structured learning journey (Diagnostic Assessment -> Customized Roadmap -> Immersive Drills -> Certification).
+4. **Our Key Features**:
+   - 8 Core Student Benefits (Level-based training, 15/batch, 2-hr daily classes, flexible timing, no age barrier, weekend batches, personal training).
    - Real mentor-student coaching visual.
 
 5. **Student Reviews & FAQ**:
