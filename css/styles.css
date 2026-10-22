@@ -1485,9 +1485,9 @@ ul {
 
 .branch-header {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.25rem;
 }
 
 .branch-icon-pin {
