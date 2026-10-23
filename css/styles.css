@@ -446,22 +446,6 @@ ul {
   overflow: hidden;
 }
 
-.hero::after {
-  content: '';
-  position: absolute;
-  right: -5%;
-  top: 8%;
-  width: 520px;
-  height: 520px;
-  background-image: url('../images/english-spot-logo.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  opacity: 0.06;
-  pointer-events: none;
-  z-index: 0;
-}
-
 .hero-grid {
   display: grid;
   grid-template-columns: 1.15fr 0.95fr;
